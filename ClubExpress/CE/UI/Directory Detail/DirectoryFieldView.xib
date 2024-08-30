@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DirectoryFieldView" customModule="Membership_Toolkit" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="d7U-bv-KKu" id="Bbb-FO-ZBi"/>
+                <outlet property="valueButton" destination="dO2-tA-gYQ" id="Igp-eT-2yQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-bv-KKu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dO2-tA-gYQ" customClass="ButtonWithInsets" customModule="Membership_Toolkit" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="22.5" width="43" height="47.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="valueBtnPressed:" destination="-1" eventType="touchUpInside" id="6t8-A4-rEB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d7U-bv-KKu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BFy-9G-EgB"/>
+                <constraint firstAttribute="bottom" secondItem="dO2-tA-gYQ" secondAttribute="bottom" id="E5K-Wh-Rb8"/>
+                <constraint firstItem="dO2-tA-gYQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PgH-VW-inT"/>
+                <constraint firstItem="d7U-bv-KKu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fRw-2c-oPG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dO2-tA-gYQ" secondAttribute="trailing" id="gvB-Dm-eNB"/>
+                <constraint firstItem="dO2-tA-gYQ" firstAttribute="top" secondItem="d7U-bv-KKu" secondAttribute="bottom" constant="2" id="keK-Ri-XhS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="d7U-bv-KKu" secondAttribute="trailing" id="lvg-4u-zLM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="140" y="140.32983508245877"/>
+        </view>
+    </objects>
+</document>
